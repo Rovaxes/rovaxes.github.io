@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel = "stylesheet" href = "./css/indexStyle.css" type = "text/css">
+</head>
+<body>
+
+  <div class = "fadeIn">
+    <header>
+      <ul id="left-nav">
+        <li><img class = "logo" src = "../Logo.png" alt = "Logo"></li>
+      </ul>
+
+      <ul id="right-nav">
+        <li><a href="">Projects</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </header>
+
+    <div class = "content">
+
+      <div class = "pushOver">
+        <video class = "demo inner" width = "400" autoplay muted loop controls>
+          <source src="demoGame.mp4" type="video/mp4">
+            Video Not Supported by Browser
+        </video>
+        <div class = "inner">
+          <h4 class = "gameTitle"> 2018-09-29 : Created Basic Model for the Game  </h4>
+          <p class = "gameText">I implemented some of the basic features to the
+            game such as player movement and a bullet spawner that is meant to
+            be added to a future enemy AI that would shoot arrows at the main
+            player. I referenced the concept from the following unity
+            <a href = "https://unity3d.com/learn/tutorials/temas/multiplayer-networking/shooting-single-player">
+            tutorial. </a> </p>
+        </div>
+      </div>
+
+      <div class = "pushOver">
+        <video class = "demo inner" width = "400" autoplay muted loop controls>
+          <source src="demoGame.mp4" type="video/mp4">
+            Video Not Supported by Browser
+        </video>
+        <div class = "inner">
+          <h4 class = "gameTitle"> 2018-09-30 : Created a basic enemy AI </h4>
+          <p class = "gameText">With the help of Brackeys and A star path finding
+            I was able to create a simple enemy that follows the player. I tried
+            to use the AI implemented from the A* path finding project but, it
+            is limited to a Birdseye type of 2D game rather then a 2D Sidescroller.
+            When I tried to tweak it to work for a Sidescroller I faced issues
+            with the AI shifting along the z axis during collisions. It might be
+            because I’m creating a 3D game with 2D physics, so I created my own
+            AI script following Brackeys tutorial.
+            </br> <a href = "https://arongranberg.com/astar/docs/"> A* Pathfinding </a>
+            </br> <a href = "https://www.youtube.com/watch?v=4T7KHysRw84"> Brackeys AI Tutorial </a>
+          </p>
+        </div>
+      </div>
+
+      <div class = "pushOver">
+        <video class = "demo inner" width = "400" autoplay muted loop controls>
+          <source src="demoGame.mp4" type="video/mp4">
+            Video Not Supported by Browser
+        </video>
+        <div class = "inner">
+          <h4 class = "gameTitle"> 2018-10-02 : Modified the enemy AI Script </h4>
+          <p class = "gameText">I ran into an issue with the AI as even when the
+            target was reached the target continued to ‘shimmey’ and force its way
+            closer then I wanted the enemy to approach the player. Also when two
+            enemy’s were next to each other the further one pushes the enemy in
+            front to reach the player. To solve this I modified Bradley’s AI
+            script to include a circle collider to detect when the target or
+            another AI is reached. Thus in the script utilizing onTriggerEnter2D
+            and onTriggerExit2D to edit a Boolean to determine whether or not to
+            move the AI.
+          </p>
+        </div>
+      </div>
+
+      <div class = "pushOver">
+        <video class = "demo inner" width = "400" autoplay muted loop controls>
+          <source src="demoGame.mp4" type="video/mp4">
+            Video Not Supported by Browser
+        </video>
+        <div class = "inner">
+          <h4 class = "gameTitle"> 2018-10-03 : Modified Enemy AI Script V2 (Multiple Colliders) </h4>
+          <p class = "gameText">Edited the AI to only chase the player when it
+            is within the vision radius (circle collider) of the enemy and stopping
+            the movement of the AI when it is inside the Attack radius (another
+            circle collider). This was done by adding empty game objects; one for
+            vision and one for attack. Respectively adding a circle collider and
+            a script to each of the children of the enemy AI. From there I used
+            onTriggerEnter2D and onTriggerExit2D like before to determine when it
+            enters and leaves one of the colliders. Then within the EnemyAI script
+            I referred to the two scripts to determine when I should move the enemy.
+            </br>
+            <a href = "https://forum.unity.com/threads/access-float-variable-from-another-script.496513/"> (OLD) Connecting scripts </a>
+            </br>
+            Revised: When I put in multiple enemies into the scene using prefabs
+            the enemies all referred to the same colliders on only of the enemies.
+            To fix this I referred to each scripts individually by looking into
+            the children of the AI gameObject rather then looking for the scripts
+            in the entire game like in the first method.
+            </br>
+            <a href = "https://docs.unity3d.com/ScriptReference/Component.GetComponentsInChildren.html"> Connecting Scripts more specifically. </a>
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+
+
+
+<!--
+  <div align = "center" class = "games fadeIn">
+    <iframe scrolling="no" src="https://dodgergame.azurewebsites.net/" height="638px" width="960"></iframe>
+  </div>
+-->
+
+</body>
+</html>
