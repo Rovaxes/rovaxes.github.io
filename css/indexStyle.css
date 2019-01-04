@@ -66,7 +66,13 @@ header{
 
 .pushOver {
   width: 100%;
+  grid-area: pushOver;
 }
+
+.pushVisual {
+  grid-area: pushVisual;
+}
+
 
 .inner {
   display: inline-block;
@@ -75,7 +81,7 @@ header{
 
 .gameTitle{
     padding: 0px;
-    margin: 5px;
+    margin: 0px;
     margin-top: 20px;
     font-family: "Montserrat";
     font-size: 48px;
@@ -83,11 +89,40 @@ header{
 
 .gameText {
   font-family: "Montserrat";
-  position:absolute;
-  max-width: 50%;
+  max-width: 100%;
   overflow-wrap: break-word;
-  max-height: 20%;
 }
+
+.content {
+  display: grid;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template: 300px 300px / 500px 2fr 1fr;
+  grid-template-areas:
+    'pushVisual pushOver pushProgress'
+    'snowVisual snowBall snowProgress';
+  justify-items: center;
+}
+
+.snowBall{
+  width: 100%;
+  grid-area: snowBall;
+}
+
+.snowVisual {
+  width: 100%
+  grid-area: snowVisual;
+}
+
+.pushProgress{
+  background-color: black;
+}
+
+.snowProgress{
+  background-color: black;
+}
+
 
 
 .fadeIn{
