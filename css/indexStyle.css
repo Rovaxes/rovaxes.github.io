@@ -60,12 +60,7 @@ header{
   max-height: 100%;
 }
 
-.demo{
-  margin: 25px;
-}
-
 .pushOver {
-  width: 100%;
   grid-area: pushOver;
 }
 
@@ -73,54 +68,89 @@ header{
   grid-area: pushVisual;
 }
 
-
-.inner {
-  display: inline-block;
-  vertical-align: top;
-}
-
 .gameTitle{
-    padding: 0px;
-    margin: 0px;
-    margin-top: 20px;
-    font-family: "Montserrat";
-    font-size: 48px;
+  margin-top: 0;
+  padding-top: 0;
+  font-family: "Montserrat";
+  font-size: 48px;
 }
 
 .gameText {
   font-family: "Montserrat";
-  max-width: 100%;
   overflow-wrap: break-word;
 }
 
 .content {
   display: grid;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  grid-template: 300px 300px / 500px 2fr 1fr;
+  margin-left: 5px;
+  margin-right: 5px;
+  grid-template: 300px 300px / 500px 550px 300px;
   grid-template-areas:
     'pushVisual pushOver pushProgress'
     'snowVisual snowBall snowProgress';
-  justify-items: center;
+  justify-content: center;
+  align-content: center;
+
 }
 
 .snowBall{
-  width: 100%;
   grid-area: snowBall;
 }
 
 .snowVisual {
-  width: 100%
   grid-area: snowVisual;
 }
 
 .pushProgress{
-  background-color: black;
+  padding-top: 50px;
+  grid-area: pushProgress;
+  display: grid;
+  grid-template:  1 / repeat(4, 1fr);
+  grid-template-areas:
+    'design'
+    'gameplay'
+    'art'
+    'audio';
+    height: 75%;
+    width: 75%;
+    align-content: center;
 }
 
 .snowProgress{
-  background-color: black;
+  padding-top: 50px;
+  display: grid;
+  grid-area: snowProgress;
+  grid-template:  1 / repeat(4, 1fr);
+  grid-template-areas:
+    'design'
+    'gameplay'
+    'art'
+    'audio';
+    height: 75%;
+    width: 75%;
+    align-content: center;
+}
+
+.dBar {
+  grid-area: design;
+}
+
+.gBar {
+  grid-area: gameplay;
+}
+
+.arBar {
+  grid-area: art;
+}
+
+.auBar {
+  grid-area: audio;
+}
+
+.center{
+  align-self: center;
+  justify-self: center;
 }
 
 
