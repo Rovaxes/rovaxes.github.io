@@ -85,7 +85,7 @@ header{
   width: 100%;
   margin-left: 5px;
   margin-right: 5px;
-  grid-template: 300px 300px / 500px 550px 1fr;
+  grid-template: 1fr 1fr / 500px minmax(100px, 550px) 1fr;
   grid-template-areas:
     'pushVisual pushOver pushProgress'
     'snowVisual snowBall snowProgress';
