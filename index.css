@@ -70,7 +70,7 @@ a {
   position:absolute;
   z-index: 20;
   animation-name:left-right-blue;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 .vertical-line-5{
@@ -82,7 +82,7 @@ a {
   position:absolute;
   z-index: 20;
   animation-name:left-right-blue-2;
-  animation-duration: 0.1s;
+  animation-duration: 0.2s;
 }
 
 .vertical-line-3{
@@ -94,7 +94,7 @@ a {
   position:absolute;
   z-index: 20;
   animation-name:left-right-black-2;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 .vertical-line-2{
@@ -107,7 +107,7 @@ a {
   position:absolute;
   z-index: 20;
   animation-name:top-down-blue;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 .vertical-line-4{
@@ -117,7 +117,7 @@ a {
   left: 96.5%;
   bottom: 100%;
   animation-name:top-down-black;
-  animation-duration: 1s;
+  animation-duration: 2s;
   position:absolute;
   z-index: 20;
 }
@@ -169,7 +169,7 @@ a {
 
 }
 
-@media screen and (max-width: 719px){
+@media screen and (max-width: 768px){
   .p-grid {
       display: grid;
       grid-auto-rows: 1fr auto;
@@ -191,6 +191,8 @@ a {
   width: 90%;
   height: 1vh;
   background: black;
+  animation: divider-anim;
+  animation-duration: 2s;
 }
 
 .divide-line-2 {
@@ -200,6 +202,8 @@ a {
   width: 80%;
   height: 1vh;
   background: blue;
+  animation: divider-2-anim;
+  animation-duration: 2s;
   opacity: 0.6;
 }
 
@@ -232,7 +236,6 @@ a {
 
 
 
-
 @keyframes top-down-blue {
   0%   {bottom:120%}
   100% {bottom:70%}
@@ -261,4 +264,14 @@ a {
 @keyframes fade-in {
   0%   {opacity: 0}
   100% {opacity: 100}
+}
+
+@keyframes divider-anim {
+  0%   {width:0%}
+  100% {width: 90%}
+}
+
+@keyframes divider-2-anim {
+  0%   {width:0%}
+  100% {width: 80%}
 }
