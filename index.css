@@ -154,7 +154,7 @@ a {
 
 
 
-@media screen and (max-width: 3840px){
+@media screen and (max-width: 3820px){
   .p-grid {
       display: grid;
       grid-auto-columns: 1fr 1fr auto;
@@ -169,7 +169,7 @@ a {
 
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 719px){
   .p-grid {
       display: grid;
       grid-auto-rows: 1fr auto;
