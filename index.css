@@ -154,13 +154,13 @@ a {
 
 
 
-@media (min-width: 700px){
+@media screen and (min-width: 700px){
   .p-grid {
       display: grid;
       grid-auto-columns: 1fr 1fr auto;
       grid-auto-flow: column;
       font-size: 100px;
-      -background-color: blue;
+      background-color: blue;
   }
 .text-scale *{
     font-size: 2.5vh;
@@ -169,13 +169,13 @@ a {
 
 }
 
-@media (max-width: 700px){
+@media screen and (max-width: 699px){
   .p-grid {
       display: grid;
       grid-auto-rows: 1fr auto;
       grid-auto-flow: row;
       font-size: 12px;
-      -background-color: blue;
+      background-color: green;
   }
 
   .text-scale *{
