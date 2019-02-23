@@ -1,120 +1,100 @@
 <!DOCTYPE html>
-<html>
 <head>
-  <link rel = "stylesheet" href = "./css/indexStyle.css" type = "text/css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="./index.css">
 </head>
 <body>
 
-  <div class = "fadeIn">
-    <header>
-      <ul id="left-nav">
-        <li><img class = "logo" src = "./Logo.png" alt = "Logo"></li>
+  <header>
+      <ul class="header-grid">
+        <li><a href="">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
+  </header>
 
-      <ul id="right-nav">
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </header>
-
-    <div class = "content">
-
-      <div class = "pushVisual center">
-        <iframe class = "centerVideo" width="400" height="225" src="https://youtube.com/embed/Xbx15VqEXGs"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <div class = " pushOver center">
-        <h4 class = "gameTitle">Push Over</h4>
-        <p class = "gameText">Simple Indie Game developed in Unity. The purpose
-          of the game is to survive as long as possible. Players need to dodge
-          the falling objects (Purple) and once it has hit the floor it will be
-          'pushable' (White). <br/> <br/>
-          Current State: Trying to find a better art concept to the game rather
-          then just blocks (e.g What should the player and falling objects be?)
-        </p>
-      </div>
-
-      <div class = "pushProgress center">
-        <div class = 'dBar'>
-          <div class="w3-light-grey w3-round-large">
-            <div class="w3-container w3-green w3-round-large" style="width:100%">Design</div>
-          </div><br>
-        </div>
-
-        <div class = 'gBar'>
-          <div class="w3-light-grey w3-round-large gbar">
-            <div class="w3-container w3-blue w3-round-large" style="width:100%">Gameplay</div>
-          </div><br>
-        </div>
-
-        <div class = "arBar" >
-          <div class="w3-light-grey w3-round-large gbar">
-            <div class="w3-container w3-red w3-round-large" style="width:50%">Art</div>
-          </div><br>
-        </div>
-
-        <div class = "auBar" >
-          <div class="w3-light-grey w3-round-large gbar">
-            <div class="w3-container w3-yellow w3-round-large" style="width:0%">Audio</div>
-          </div><br>
-        </div>
-      </div>
-
-
-      <div class = "snowVisual center">
-        <iframe class = "centerVideo" width="400" height="225" src="https://www.youtube.com/embed/u2TuMmxpt1E"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <section id="showCase">
+    <div class="container">
+      <img class="mainImg" src="./assets/showCase.png"/>
+      <div class="vertical-line-1"></div>
+      <div class="vertical-line-2"></div>
+      <div class="vertical-line-3"></div>
+      <div class="vertical-line-4"></div>
+      <div class="vertical-line-5"></div>
     </div>
+  </section>
 
-    <div class = "snowBall center">
-      <h4 class = "gameTitle">SnowBall</h4>
-      <p class = "gameText">A game concept inspired by a friend of mine, the
-        orginal and planned idea is to accumulate as much snow as possible while
-        avoiding obstacles. Ive originally planned to have the snowball grow
-        as the time passes however that may be too unrealistic as it will grow
-        far beyond the scope of the map. <br/> <br/>
-        Current State: Animation, Map and Hazzard Designs
-      </p>
+  <h4 id="profession">Computer Programmer - Computer Science Student</h4>
+
+
+  <div class="divide-line"></div>
+
+  <section id="about" class="text-scale">
+    <div class="divide-line-2"></div>
+    <h4 id="proj-title">About</h4>
+    <div class="divide-line-2"></div>
+    <div class="container-3">
+      Hi, my name is Dennis and I am a Computer Science student at York University.</br></br>
+
+      I'm not particularly an expert in any given field, though through my degree I've become instilled with different methods to solving problems through greedy and dynamic approaches. For example, using a greedy approach for a knapsack problem (where fractions are allowed), or using dynamic programming for the standard max-flow problem.
+      </br></br>
+      Languages: I am most comfortable with Java and JavaScript; however, I am well acquainted with C, C++, and basic shell commands. I prefer an Object-Oriented approach to programing which lead me to pick up C# for my game design projects. Lastly, I am very confident in my HTML and CSS which I love to utilize towards making responsive web-apps.
+    </br></br>
+       I've developed lots of projects from my schooling, from simple android apps to online record shops that use SQLite to access and maintain a database. I developed a Regular Expression Evaluator through Eiffel which takes a contract (client-supplier relationship) approach to programming. The program required allowed my group and I to apply many programming principles like single choice, uniform access, and a composite-visitor pattern. For working with databases, I have strong knowledge in relational algebra and am continuing to learn SQL and PostgreSQL. In the end, I hope to keep expanding my knowledge and keep up with the everchanging technology.
     </div>
+  </section>
 
-    <div class = "snowProgress center">
-      <div class = 'dBar'>
-        <div class="w3-light-grey w3-round-large">
-          <div class="w3-container w3-green w3-round-large" style="width:50%">Design</div>
-        </div><br>
+  <div class="divide-line"></div>
+
+  <section id="projects" class="text-scale">
+    <div class="divide-line-2"></div>
+    <h4 id="proj-title">Projects</h4>
+    <div class="divide-line-2"></div>
+    <div class="container-2">
+      <div class="p-grid">
+        <div class=pd-container>
+            <h6 class="p-title">Push Over</h6>
+            <p class="p-description">Simple Indie Game developed in Unity. The purpose of the game is to survive as long as possible. Players need to dodge the falling objects (Purple) and once it has hit the floor it will be 'pushable' (White).
+              Current State: Trying to find a better art concept to the game rather then just blocks (e.g What should the player and falling objects be?)
+            </p>
+        </div>
+        <img class="projectImage"src="./assets/pushOverSnap.png"/>
       </div>
-
-      <div class = 'gBar'>
-        <div class="w3-light-grey w3-round-large gbar">
-          <div class="w3-container w3-blue w3-round-large" style="width:25%">Gameplay</div>
-        </div><br>
+      <div class="p-grid">
+        <img class="projectImage" src="./assets/snowBallSnap.png"/>
+        <div class=pd-container>
+            <h6 class="p-title">Snow Ball</h6>
+            <p class="p-description">A game concept inspired by a friend of mine, the orginal and planned idea is to accumulate as much snow as possible while avoiding obstacles. Ive originally planned to have the snowball grow as the time passes however that may be too unrealistic as it will grow far beyond the scope of the map. Current State: Animation, Map and Hazzard Designs
+            </p>
+        </div>
       </div>
-
-      <div class = "arBar" >
-        <div class="w3-light-grey w3-round-large gbar">
-          <div class="w3-container w3-red w3-round-large" style="width:50%">Art</div>
-        </div><br>
-      </div>
-
-      <div class = "auBar" >
-        <div class="w3-light-grey w3-round-large gbar">
-          <div class="w3-container w3-yellow w3-round-large" style="width:0%">Audio</div>
-        </div><br>
+      <div class="p-grid">
+        <div class=pd-container>
+            <h6 class="p-title">Word Replacement</h6>
+            <p class="p-description">The site takes the input of the user and makes an HTTP Get request to
+              Datamuse's API. I divide the input into an String Array seperated by
+              non-characters using regex. Using the array I iterate through the each word
+              and make the respective query to the API and display the result in the
+              Response Field. I aim to use promises to preserve the order as some words
+              return faster then others.
+            </p>
+        </div>
+        <img class="projectImage"src="./assets/wordSnap.png"/>
       </div>
     </div>
+  </section>
 
+
+  <div class="divide-line"></div>
+
+  <section id="contact" class="text-scale">
+    <div class="divide-line-2"></div>
+    <h4 id="proj-title">Contact</h4>
+    <div class="divide-line-2"></div>
+    <div class="container-3">
+      GitHub: https://github.com/Rovaxes </br>
+      Email: dennisph@my.yorku.ca
     </div>
-
-
-  </div>
-
-<!--
-  <div align = "center" class = "games fadeIn">
-    <iframe scrolling="no" src="https://dodgergame.azurewebsites.net/" height="638px" width="960"></iframe>
-  </div>
--->
+  </section>
 
 </body>
-</html>
