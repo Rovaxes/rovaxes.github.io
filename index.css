@@ -150,6 +150,21 @@ a {
   border: black solid 0.5vh;
 }
 
+.video {
+  display: inline-block;
+  width: 80%;
+  -background-color: green;
+  align-self: center;
+  justify-self:center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  padding: 2vh;
+  margin: 2vh;
+  border: black solid 0.5vh;
+}
+
 .container-2 {
   margin: 4vh auto 4vh auto;
   width: 80%;
