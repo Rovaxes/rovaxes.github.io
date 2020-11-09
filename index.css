@@ -35,6 +35,14 @@ a {
   color: grey;
 }
 
+.app-gif {
+  -background-color: green;
+  height: 35vh;
+  align-self: center;
+  justify-self:center;
+  padding-right: 2vh;
+  padding-left: 2vh;
+}
 
 .mainImg {
   width: 75%;
@@ -128,10 +136,15 @@ a {
 
 .projectImage{
   -background:blue;
+  display: inline-block;
   width: 80%;
   -background-color: green;
   align-self: center;
   justify-self:center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
   padding: 2vh;
   margin: 2vh;
   border: black solid 0.5vh;
