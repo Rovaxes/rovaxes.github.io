@@ -1,0 +1,47 @@
+<div class="project-container">
+    <div class="container row gy-4">
+
+    <div class="col-sm-4">
+        <img [src]="project.image" class="img-fluid" alt="Project Image">
+    </div>
+    <div class="col-sm">
+        <h3>
+            {{project.name}}
+
+            <div *ngIf="project.github; then validGithubLink else invalidGithubLink">
+            </div>
+
+            <ng-template #validGithubLink>
+                <a class="icon-link icon-link-hover disabled"
+                    style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" [href]="project.github">
+                    <i class="bi bi-github h4"></i>
+                </a>
+            </ng-template>
+
+            <ng-template #invalidGithubLink>
+                <span data-bs-toggle="tooltip" data-bs-placement="top" title="Not available">
+                    <i class="bi bi-github h4"></i>
+                </span>
+            </ng-template>
+        </h3>
+
+        <p>
+            {{project.description}}
+        </p>
+
+        <div class="container p-0">
+            <div class="row justify-content-start gx-2 gy-2">
+                <div *ngFor="let skill of project.skills" class="col-sm-auto">
+                    <div class="badge text-bg-primary">{{skill}}</div>
+                </div>
+            </div>
+
+            <div class="p-2"></div>
+
+        </div>
+
+        <a [href]="project.demo" target="_blank" class="btn btn-primary" role="button">Demo</a>
+
+    </div>
+</div>
+</div>

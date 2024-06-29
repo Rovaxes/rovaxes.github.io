@@ -1,0 +1,39 @@
+<div id="landing" [ngStyle]="{'background-image': 'linear-gradient(white, transparent, white), url(' + 'sky.png' + ')'}"
+    class="background">
+    <div class="container">
+        <div class="m-1"></div>
+        <div class="row justify-content-center header m-0">
+            <h1 class="col silkscreen-regular justify-content-md-center">
+                Dennis Phetsomphou
+            </h1>
+        </div>
+        <div class="m-4"></div>
+
+        <div class="row gy-4 justify-content-center">
+            <div class="col-sm-9">
+                <app-card [title]="welcomeTitle" [text]="welcomeText"></app-card>
+            </div>
+            <div class="col-sm-3 image-card-1">
+                <app-card [type]="CardType.image" [image]="portraitPicture"></app-card>
+            </div>
+        </div>
+
+        <div class="m-4"></div>
+
+        <div class="row gy-4 justify-content-center">
+            <div class="col-sm-4 image-card-2 blur">
+                <a href="#contact">
+                    <app-card [type]="CardType.image" [image]="showcaseOnePicture"></app-card>
+                </a>
+            </div>
+            <div class="col-sm-8 image-card-2 blur">
+                <a href="#contact">
+                    <app-card [type]="CardType.image" [image]="showcaseTwoPicture" [bottomAlignImage]="true"></app-card>
+                </a>
+            </div>
+            <div class="m-4"></div>
+        </div>
+
+    </div>
+
+</div>

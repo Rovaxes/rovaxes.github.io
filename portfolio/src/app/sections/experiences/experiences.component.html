@@ -1,0 +1,101 @@
+<div [ngStyle]="{'background-image': 'linear-gradient(white, transparent, white), url(' + 'fields2.png' + ')'}" class="background">
+<div id="expierences" class="container">
+    <div class="p-4"></div>
+    <h2 class="silkscreen-regular">Adventure Expierences</h2>
+
+    <div class="p-4"></div>
+    <div class="m-4"></div>
+
+    <div class="row gy-4 justify-content-start">
+
+        <div *ngFor="let expierenceGroup of expierences" class="col-lg-6">
+            <div class="card">
+                <div class="tools">
+                    <div class="circle">
+                        <span class="red box"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="yellow box"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="green box"></span>
+                    </div>
+                </div>
+                <div class="card__content space-mono-regular white container">
+
+                    <div class="row justify-content-between">
+                        <div class="col-md-auto">
+                            Company:
+                        </div>
+                        <div class="col-md-auto">
+                            {{expierenceGroup.company}}
+                        </div>
+                    </div>
+
+
+                    <div class="m-2">
+
+                    </div>
+
+                    <div class="row justify-content-between">
+                        <div class="col-md-auto">
+                            Positions:
+                        </div>
+                        <div class="col-md-auto text-end">
+                            <div *ngFor="let expierence of expierenceGroup.expierences">
+                                {{expierence.roleName}}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="m-2"> </div>
+
+                    <div class="row justify-content-between">
+                        <div class="col-md-auto">
+                            Length:
+                        </div>
+                        <div class="col-md-auto text-end">
+                            {{ getLengthOfTimeAtCompany( expierenceGroup.expierences ) | number : '1.2-2' }} years
+                        </div>
+                    </div>
+
+                    <div *ngFor="let expierence of expierenceGroup.expierences">
+                        <div class="m-2"></div>
+                        <hr />
+                        <div class="m-2"></div>
+                        <div>
+                            {{expierence.roleName}}
+                        </div>
+
+                        <div class="m-2"></div>
+                        <div>
+                            {{expierence.fromDate.toLocaleDateString("en-US", { year: 'numeric', month: 'long'})}} ->
+                            {{expierence.toDate != null ? expierence.toDate.toLocaleDateString("en-US", { year:
+                            'numeric', month: 'long'}) : "Now"}} ({{getLengthOfTime(expierence.fromDate, expierence.toDate)}} months)
+                        </div>
+                        <div class="m-2"></div>
+                        <div>
+                            Description:
+                        </div>
+                        <ul>
+                            <li *ngFor="let description of expierence.descriptions">
+                                {{ description }}
+                            </li>
+                        </ul>
+
+                        <div class="row m-1">
+                            <div *ngFor="let skill of expierence.skills" class="badge badge-light badge-color m-1 col">
+                                {{skill}}</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+</div>
