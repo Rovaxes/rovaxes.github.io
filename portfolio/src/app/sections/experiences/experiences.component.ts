@@ -76,8 +76,8 @@ export class ExperiencesComponent {
           'Technology Associate - Cloud Developer',
           'Canadian Tire',
           [
-            'Worked in a cross functional team to deploy Synapse workspaces and provide Azure AD access through existing pipelines and terraform',
-            'Aided in the migration/upgrade of the teams Azure AD access workflow'
+            'Worked in a cross-functional team to deploy Synapse workspaces and provide Azure AD access through existing pipelines and terraform',
+            'Aided in the migration/upgrade of the teams\' Azure AD access workflow'
           ],
           [
             'Terrafrom',
@@ -119,9 +119,9 @@ export class ExperiencesComponent {
           'Technology Associate - Web Developer',
           'Canadian Tire',
           [
-            'Migrated over 10 features for an In-store commerce web application built in Angular to a new backend service.',
+            'Migrated over 10 features for an In-store e-commerce web application built in Angular to a new backend service.',
             'Enhanced code quality and maintainability by modularizing the codebase into separate libraries/packages for use across web services.',
-            'Integrated contract testing at the company into their CI/CD pipelines using Node.js and Github actions, increasing code quality for their ecommerce services that help support over 1500 stores.'
+            'Integrated contract testing at the company into their CI/CD pipelines using Node.js and Github actions, increasing code quality for their e-commerce services that help support over 1500 stores.'
           ],
           [
             'Angular',

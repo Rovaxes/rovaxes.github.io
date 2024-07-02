@@ -15,7 +15,7 @@ export class ProjectsComponent {
   projects: Array<ProjectModel> = [
     new ProjectModel(
       'Level Up',
-      'This is my take on a to-do list app built in Flutter. Create missions, gain expierence, and level up! This application was used and took in best practices following the provider/consumer patterns',
+      'This is my take on a to-do list app built in Flutter. Create missions, gain experience, and level up! This application was used and took in best practices following the provider/consumer patterns',
       [
         'Dart',
         'Flutter',
@@ -32,7 +32,7 @@ export class ProjectsComponent {
     ),
     new ProjectModel(
       'The Slums',
-      'A 2D Endless Runner which utilizes C# scripts to dynamically spawn the enviornment and enemies to allow for a natural parallax scrolling effect. Players need to avoid or defeat enemies and travel as far as possible to achieve the highest score possible.',
+      'A 2D Endless Runner that utilizes C# scripts to dynamically spawn the environment and enemies to allow for a natural parallax scrolling effect. Players need to avoid or defeat enemies and travel as far as possible to achieve the highest score possible.',
       [
         'C#',
         'Unity',
@@ -48,7 +48,7 @@ export class ProjectsComponent {
     ),
     new ProjectModel(
       'Push Over',
-      'Indie game developed in Unity and C# where you play as a cuve trying to survive for as long as possible. Players need to dodge the falling objects and once it has hit the floor it will be \'pushable\' and you can make way.',
+      'Indie game developed in Unity and C# where you play as a cube trying to survive for as long as possible. Players need to dodge the falling objects and once it has hit the floor they will be \'pushable\' and cleared away.',
       [
         'C#',
         'Unity',
@@ -64,7 +64,7 @@ export class ProjectsComponent {
     ),
     new ProjectModel(
       'LED Table',
-      'This is my first expierence and the gateway project that got me into engineering! It is an LED minature table that uses infared sensors to reactively light up the panels and play music built with an Arduino Duo.',
+      'This is my first experience and the gateway project that got me into engineering! It is an LED miniature table that uses infrared sensors to reactively light up the panels and play music built with an Arduino Duo.',
       [
         'Arduino',
         'C++',
