@@ -15,6 +15,39 @@ import { ExpierenceGroupModel } from '../../models/expierence-group.model';
 export class ExperiencesComponent {
   expierences: Array<ExpierenceGroupModel> = [
     new ExpierenceGroupModel(
+      'CARFAX',
+      [
+        new ExpierenceModel(
+          'Software Engineer',
+          'CARFAX',
+          [
+            'Implement and maintain services providing carfax products to clients leveraging tools such as Golang, Java, React and AWS',
+            'Migrated legacy on-prem vehicle history report services to the cloud that support over 86 000 service shops and dealers.',
+            'Work with support teams to ensure the upkeep of ETL flows processing milions of VINs'
+          ],
+          [
+            'Golang',
+            'Java',
+            'Spring',
+            'AWS',
+            'SQS/Rabbit Queues',
+            'NOSQL',
+            'SQL',
+            'Oracle',
+            'React.js',
+            'Javascript',
+            'HTML/CSS',
+            'Git',
+            'Kubernetes',
+            'Docker/Containers',
+            'Agile',
+            'Scrum'
+          ],
+          new Date('2024-09-1')
+        )
+      ]
+    ),
+    new ExpierenceGroupModel(
       'XTM Inc',
       [
         new ExpierenceModel(
@@ -40,7 +73,8 @@ export class ExperiencesComponent {
             'Agile',
             'Scrum'
           ],
-          new Date('2022-10-1')
+          new Date('2022-10-1'),
+          new Date('2024-09-1')
         ),
         new ExpierenceModel(
           'Back-end Developer',
